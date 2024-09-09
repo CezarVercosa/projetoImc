@@ -20,6 +20,7 @@
                     <th>Nome</th>
                     <th>Email</th>
                     <th>Telefone</th>
+                    <th>Mensagem</th>
                     <th>Peso</th>
                     <th>Altura</th>
                     <th>IMC</th>
@@ -34,6 +35,7 @@
                         <td>{{ $user->nome }}</td>
                         <td>{{ $user->email }}</td>
                         <td><span class="phone-format">{{ $user->telefone }}</span></td>
+                        <td>{{ $user->mensagem}}</td>
                         <td>{{ $user->peso }}</td>
                         <td>{{ $user->altura }}</td>
                         <td>{{ round($user->peso / ($user->altura * $user->altura), 2) }}</td>

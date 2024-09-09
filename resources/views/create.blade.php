@@ -35,6 +35,14 @@
         </div>
 
         <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem">{{ old('mensagem') }}</textarea>
+            @error('mensagem')
+                <div class="text-danger">{{ $message }}</div>
+            @enderror
+        </div>
+
+        <div class="form-group">
             <label>Peso</label>
             <input type="number" step="0.01" name="peso" class="form-control" value="{{ old('peso') }}" id="peso" maxlength="5" >
             @error('peso')

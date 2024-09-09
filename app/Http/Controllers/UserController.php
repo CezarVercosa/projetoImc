@@ -26,6 +26,7 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'nome' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
+            'mensagem' => 'required|string|max:255',
             'telefone' => 'required|string',
             'peso' => 'required|numeric',
             'altura' => 'required|numeric',
